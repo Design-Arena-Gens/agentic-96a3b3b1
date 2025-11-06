@@ -1,0 +1,110 @@
+:root {
+  --bg: #0b1020;
+  --card: #0f172a;
+  --muted: #94a3b8;
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+  --accent-2: #22d3ee;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1000px 600px at 80% -200px,#1e293b 0%,transparent 70%),
+              radial-gradient(800px 500px at 20% -200px,#0ea5e9 0%,transparent 70%),
+              var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+  max-width: 940px;
+  margin: 48px auto 120px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 40px rgba(2,6,23,0.4);
+}
+
+.badge {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: #0c4a6e;
+  background: linear-gradient(180deg, #cffafe, #a5f3fc);
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.h1 {
+  margin: 14px 0 6px 0;
+  font-size: 38px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle { color: var(--muted); margin-top: 0; }
+
+.section { margin-top: 40px; }
+.section h2 { margin: 0 0 8px 0; font-size: 22px; }
+.section p { color: var(--text); opacity: 0.95; }
+
+.card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.96));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.codeblock {
+  position: relative;
+  background: #0a0f1e;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 14px 14px 12px 14px;
+  overflow-x: auto;
+}
+
+.codeblock pre {
+  margin: 0;
+  white-space: pre;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(180deg, #38bdf8, #22d3ee);
+  color: #00111a;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.footer {
+  max-width: 940px;
+  margin: 40px auto 40px auto;
+  padding: 0 20px;
+  color: var(--muted);
+}
+
+.ul { margin: 8px 0 0 0; }
+.ul li { margin: 4px 0; }
+
+.kbd {
+  background: #0b1020;
+  border: 1px solid rgba(148,163,184,0.3);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
